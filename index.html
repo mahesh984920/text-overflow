@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text overflow</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      .md {
+        width: 90%;
+        background-color: aliceblue;
+        margin: auto;
+        box-shadow: 0px 0px 10px black;
+        display: flex;
+        justify-content: center;
+        height: auto;
+      }
+      .div1 {
+        border: 2px solid black;
+        margin: 10px;
+        text-align: center;
+        background-color: darkgrey;
+      }
+      img {
+        border: 1px solid goldenrod;
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+      }
+      .hov {
+        min-height: 30px;
+      }
+      .desc {
+        border: 2px solid cadetblue;
+        width: 80%;
+        height: auto;
+        max-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        display: none;
+        overflow-y: hidden;
+      }
+      .hov:hover+ .desc{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="div1">
+        <h3 class="name">Sachin tendulkar</h3>
+        <img src="./assets/images/sachin.jpg" alt="" />
+        <p class="hov">Hover for description...</p>
+        <div class="desc">
+          <p>
+            Tendulkar is known as the "God of Cricket" or "Master Blaster". He
+            is the highest run-scorer in both ODI and Test cricket, and the only
+            player to score 100 international centuries. He also holds the
+            record for the most player of the match awards in international
+            cricket.
+          </p>
+        </div>
+      </div>
+
+      <div class="div1">
+        <h3>Virat Kohli</h3>
+        <img src="./assets/images/virat.jpg" alt="" />
+        <p class="hov">Hover for description...</p>
+        <div class="desc">
+          <p>
+            Kohli has won all three ICC awards in a single year (2018), and is
+            the only Indian to score 6 test hundreds in Australia after Sachin
+            Tendulkar. He is also the highest run-scorer in the Indian Premier
+            League (IPL) and the only player to have played all seasons for one
+            team (Royal Challengers Bangalore).
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
